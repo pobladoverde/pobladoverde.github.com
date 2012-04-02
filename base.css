@@ -1,0 +1,35 @@
+body {
+  font-family: verdana, helvetica;
+	margin: 0px;
+	background-color: rgb(61, 131, 117);
+}
+div.título {
+	position: relative;
+	background-color: #D8D1BE;
+	clear: both;
+	margin:0px auto;
+	padding:2px;
+	width: 744px;
+}
+div.cuerpo {
+	position:relative;
+	background-image: url("http://www.pobladoverde.net/resources/_wsb_keyvisual.jpg");
+	background-repeat: no-repeat;
+	background-color: rgb(106, 163, 154);
+	clear: both;
+	margin:0px auto;
+	padding:10px;
+	padding-top: 220px;
+	width: 744px;
+}
+#razón_social {
+  border-bottom: 1px solid rgb(106, 163, 154);
+  color: rgb(61, 131, 117);
+  font-size: 16pt;
+  font-weight: bold;
+}
+#dirección {
+	width: 100%;
+  text-align: right;
+  font-size: 8pt;
+}

@@ -2,7 +2,7 @@
 <head>
   <title>Conjunto Residencial Poblado Verde</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <!-- script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <link href="base.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
@@ -19,6 +19,45 @@
   </table>
 </div>
 <div class=cuerpo>
+    <div id="test">Esperando un mensaje desde <b>node.js</b>: </div>
+    <a href="javascript:repite();">Otro pedido</a> 
+<script>
+  $(document).ready(function() {
+	  $.ajax({
+		  url: 'http://127.0.0.1:8888/',
+		  dataType: "jsonp",
+		  contentType: 'application/x-www-form-urlencoded',
+		  jsonpCallback: "_testcb",
+		  cache: false,
+		  timeout: 2000,
+		  success: function(data) {
+			  $("#test").append('<br> ' + data);
+		  },
+		  error: function(jqXHR, textStatus, errorThrown) {
+			  $("#test").append('<br>error ' + textStatus + " " + errorThrown);
+		  }
+	  });
+  });
+  
+  function repite() {
+	  $.ajax({
+		  url: 'http://127.0.0.1:8888/',
+		  dataType: "jsonp",
+		  contentType: 'text/html; charset=iso-8859-1',
+		  jsonpCallback: "_testcd",
+		  cache: false,
+		  timeout: 5000,
+		  success: function(data) {
+			  $("#test").append('<br> ' + data);
+		  },
+		  error: function(jqXHR, textStatus, errorThrown) {
+			  $("#test").append('<br>error ' + textStatus + " " + errorThrown);
+		  }
+	  });
+  
+  }
+</script>
+
 <form action="/upload" enctype="multipart/form-data" method="post">
   <input type="file" name="upload" multiple="multiple">
   <input type="submit" value="Upload file" />

@@ -7,7 +7,6 @@
 	<title>Conjunto Residencial Poblado Verde - {{ page.title }}</title>
 	<meta name="author" content="Consejo de Administración" />
 	<link rel="stylesheet" href="/css/base.css" type="text/css" media="all" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 </head>
 <body>
 <div id="title">
@@ -15,47 +14,7 @@
 	<span id="address">Medellín, Colombia</span>
 </div>
 <div class=cuerpo>
-<script>
-  var url='http://pverde.nodejitsu.com/';
-	//var url='http://localhost:8888/';
-
-  $(document).ready(function() {
-	  $.ajax({
-		  url: url,
-		  dataType: "jsonp",
-		  contentType: 'application/x-www-form-urlencoded',
-		  jsonpCallback: "_testcb",
-		  cache: false,
-		  timeout: 2000,
-		  success: function(data) {
-			  $("#test").append('<br> ' + data);
-		  },
-		  error: function(jqXHR, textStatus, errorThrown) {
-			  $("#test").append('<br>error ' + textStatus + " " + errorThrown);
-		  }
-	  });
-  });
-  
-  function repite() {
-	  $.ajax({
-		  url: url,
-		  dataType: "jsonp",
-		  contentType: 'text/html; charset=iso-8859-1',
-		  jsonpCallback: "_testcd",
-		  cache: false,
-		  timeout: 5000,
-		  success: function(data) {
-			  $("#test").append('<br> ' + data);
-		  },
-		  error: function(jqXHR, textStatus, errorThrown) {
-			  $("#test").append('<br>error ' + textStatus + " " + errorThrown);
-		  }
-	  });
-  }
-</script>
-
 {{ content }}
-
 </div>
 
 <div id="footer">

@@ -3,8 +3,9 @@ layout: default
 title: bienvenidos
 ---
 <div id="hot-topic">
+<h1>Tema prioritario</h1>
 {% for post in site.posts %}
-	{%if post.title='Problemática del golfito' then %}
+	{%if post.title='Problemática del golfito' %}
 		<h2>{{ post.title }}</h2>
 		<p>{{ post.content }}</p>
 	{% endif %}
@@ -20,7 +21,7 @@ title: bienvenidos
 
 <hr />
 
-<h2>Archivo</h2>
+<h2>Lista de temas</h2>
 <ul id="archive">
 {% for post in site.posts %}
 <li><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;<abbr>{{ post.date | date_to_string }}</abbr></li>

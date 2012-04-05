@@ -9,10 +9,10 @@ En la pasada asamblea, se solicitó al recién nombrado consejo de administraci�
 
 Las alternativas que se han contemplado hasta el momento son:
 
-# "Reposición del tapete sintético por uno equivalente":{% post_url 2012-04-04-reposicion-golfito %}.
+# "Reposición del tapete sintético por uno equivalente":http://pobladoverde.com/blog/2012/04/04/pintura-golfito/.
 # "Retiro del tapete sintético y aplicación de pintura epóxica":http://pobladoverde.com/blog/2012/04/04/pintura-golfito/.
-# "Construcción de jardín zen, jardín vegetal o similares":{% post_url 2012-04-04-golfito-por-jardin %}.
-# "Demolición completa del golfito y cambio por piso duro":{% post_url 2012-04-04-retiro-golfito %}.
+# "Construcción de jardín zen, jardín vegetal o similares":http://pobladoverde.com/blog/2012/04/04/pintura-golfito/.
+# "Demolición completa del golfito y cambio por piso duro":http://pobladoverde.com/blog/2012/04/04/pintura-golfito/.
 
 Cada alternativa presenta ventajas y desventajas y por lo tanto cada una tendrá seguidores y detractores.
 

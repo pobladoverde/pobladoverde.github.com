@@ -3,6 +3,16 @@ body {
 	margin: 0px;
 	background-color: rgb(61, 131, 117);
 }
+h1 {
+  font-size: 14pt;
+}
+h2 {
+  font-size: 12pt;
+}
+abbr {
+  font-size: 9pt;
+	color: rgb(61, 131, 117);
+}
 div.cuerpo {
 	position:relative;
 	background-image: url("http://www.pobladoverde.net/resources/_wsb_keyvisual.jpg");
@@ -13,6 +23,7 @@ div.cuerpo {
 	padding:10px;
 	padding-top: 220px;
 	width: 744px;
+	font-size: 10pt;
 }
 #title {
 	position: relative;
@@ -40,7 +51,7 @@ div.cuerpo {
   margin-left: 588px;
 }
 #footer {
-	width: 80%;
+	width: 100%;
   text-align: center;
   font-size: 8pt;
 }
@@ -49,4 +60,8 @@ div.cuerpo {
 }
 #disqus {
   font-size: 10pt;
+}
+#date {
+  font-size: 9pt;
+	color: rgb(61, 131, 117);
 }

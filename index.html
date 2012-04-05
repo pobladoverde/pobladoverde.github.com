@@ -1,68 +1,20 @@
-<html>
-<head>
-  <title>Conjunto Residencial Poblado Verde</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <link href="base.css" rel="stylesheet" type="text/css" media="all" />
-</head>
-<body>
-<div class=título>
-  <table>
-    <tr>
-      <td>
-        <img src="http://www.pobladoverde.net/resources/_wsb_logo.png">
-      </td><td>  
-        <span id='razón_social'>Conjunto Residencial Poblado Verde</span><br />
-        <span id='dirección'>Medellín, Colombia</span>
-      </td>
-    </tr>
-  </table>
+---
+layout: default
+title: bienvenidos
+---
+{% assign first_post = site.posts.first %}
+<div id="post">
+  <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
+  <div id="date">published {{ first_post.date | date_to_string }}</div>
+  {{ first_post.content }}
+  <a id="more" href="{{ first_post.url }}#disqus">Comments &raquo;</a>
 </div>
-<div class=cuerpo>
-    <div id="test">Esperando un mensaje desde <b>node.js</b>: </div>
-    <a href="javascript:repite();">Otro pedido</a> 
-<script>
-  $(document).ready(function() {
-	  $.ajax({
-		  url: 'http://pverde.nodejitsu.com/',
-		  dataType: "jsonp",
-		  contentType: 'application/x-www-form-urlencoded',
-		  jsonpCallback: "_testcb",
-		  cache: false,
-		  timeout: 2000,
-		  success: function(data) {
-			  $("#test").append('<br> ' + data);
-		  },
-		  error: function(jqXHR, textStatus, errorThrown) {
-			  $("#test").append('<br>error ' + textStatus + " " + errorThrown);
-		  }
-	  });
-  });
-  
-  function repite() {
-	  $.ajax({
-		  url: 'http://pverde.nodejitsu.com/',
-		  dataType: "jsonp",
-		  contentType: 'text/html; charset=iso-8859-1',
-		  jsonpCallback: "_testcd",
-		  cache: false,
-		  timeout: 5000,
-		  success: function(data) {
-			  $("#test").append('<br> ' + data);
-		  },
-		  error: function(jqXHR, textStatus, errorThrown) {
-			  $("#test").append('<br>error ' + textStatus + " " + errorThrown);
-		  }
-	  });
-  
-  }
-</script>
 
-<form action="/upload" enctype="multipart/form-data" method="post">
-  <input type="file" name="upload" multiple="multiple">
-  <input type="submit" value="Upload file" />
-</form>
-<h2>El primer tema</h2><p>muy poco aún</p>
-</div>
-</body>
-</html>
+<hr />
+
+<h2>archive</h2>
+<ul id="archive">
+{% for post in site.posts %}
+<li><a href="{{ post.url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,46 @@
+body {
+  font-family: verdana, helvetica;
+	margin: 0px;
+	background-color: rgb(61, 131, 117);
+}
+div.cuerpo {
+	position:relative;
+	background-image: url("http://www.pobladoverde.net/resources/_wsb_keyvisual.jpg");
+	background-repeat: no-repeat;
+	background-color: rgb(106, 163, 154);
+	clear: both;
+	margin:0px auto;
+	padding:10px;
+	padding-top: 220px;
+	width: 744px;
+}
+#title {
+	position: relative;
+	background-image: url("http://www.pobladoverde.net/resources/_wsb_logo.png");
+	background-repeat: no-repeat;
+	background-color: #D8D1BE;
+	clear: both;
+	margin:0px auto;
+	padding:2px;
+	width: 760px;
+	height: 56px;
+}
+#title-name {
+  border-bottom: 1px solid rgb(106, 163, 154);
+  color: rgb(61, 131, 117);
+  font-size: 16pt;
+  font-weight: bold;
+  height: 118px;
+  margin-left: 256px;
+}
+#address {
+	width: 100%;
+  text-align: right;
+  font-size: 8pt;
+  margin-left: 588px;
+}
+#footer {
+	width: 80%;
+  text-align: center;
+  font-size: 8pt;
+}

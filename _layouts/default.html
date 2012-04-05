@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es-co">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Conjunto Residencial Poblado Verde - {{ page.title }}</title>
+	<meta name="author" content="Consejo de Administración" />
+	<link rel="stylesheet" href="/css/base.css" type="text/css" media="all" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="title">
+	<span id="title-name">Conjunto Residencial Poblado Verde</span><br />
+	<span id="address">Medellín, Colombia</span>
+</div>
+<div class=cuerpo>
+<script>
+  var url='http://pverde.nodejitsu.com/';
+	//var url='http://localhost:8888/';
+
+  $(document).ready(function() {
+	  $.ajax({
+		  url: url,
+		  dataType: "jsonp",
+		  contentType: 'application/x-www-form-urlencoded',
+		  jsonpCallback: "_testcb",
+		  cache: false,
+		  timeout: 2000,
+		  success: function(data) {
+			  $("#test").append('<br> ' + data);
+		  },
+		  error: function(jqXHR, textStatus, errorThrown) {
+			  $("#test").append('<br>error ' + textStatus + " " + errorThrown);
+		  }
+	  });
+  });
+  
+  function repite() {
+	  $.ajax({
+		  url: url,
+		  dataType: "jsonp",
+		  contentType: 'text/html; charset=iso-8859-1',
+		  jsonpCallback: "_testcd",
+		  cache: false,
+		  timeout: 5000,
+		  success: function(data) {
+			  $("#test").append('<br> ' + data);
+		  },
+		  error: function(jqXHR, textStatus, errorThrown) {
+			  $("#test").append('<br>error ' + textStatus + " " + errorThrown);
+		  }
+	  });
+  }
+</script>
+
+{{ content }}
+
+</div>
+
+<div id="footer">
+	Derechos registrados por el Conjunto Residencial Poblado Verde &reg; 2012
+</div>
+
+</body>
+</html>

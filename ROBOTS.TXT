@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /webstats/ 
+Disallow: /cgi-bin/ 
+Disallow: /logs/

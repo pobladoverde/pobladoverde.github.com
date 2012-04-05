@@ -1,0 +1,6 @@
+_private/
+_site/
+node_modules
+.keys
+*~
+*.swp

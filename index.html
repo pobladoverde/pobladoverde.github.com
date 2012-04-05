@@ -2,7 +2,15 @@
 layout: default
 title: bienvenidos
 ---
-{% assign first_post = site.posts.last %}
+<div id="hot-topic">
+{% for post in site.posts %}
+	{%if post.title='Problemática del golfito' then %}
+		<h2>{{ post.title }}</h2>
+		<p>{{ post.content }}</p>
+	{% endif %}
+{% endfor %}
+</div>
+{% assign first_post = site.posts.first %}
 <div id="post">
   <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
   <div id="date">Publicado en {{ first_post.date }}</div>

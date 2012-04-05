@@ -11,7 +11,7 @@ h2 {
 }
 abbr {
   font-size: 9pt;
-	color: rgb(61, 131, 117);
+	color: rgb(41, 111, 87);
 }
 div.cuerpo {
 	position:relative;
@@ -63,5 +63,5 @@ div.cuerpo {
 }
 #date {
   font-size: 9pt;
-	color: rgb(61, 131, 117);
+	color: rgb(41, 111, 87);
 }

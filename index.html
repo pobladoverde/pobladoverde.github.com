@@ -2,7 +2,7 @@
 layout: default
 title: bienvenidos
 ---
-{% assign first_post = site.posts.first %}
+{% assign first_post = site.posts.last %}
 <div id="post">
   <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
   <div id="date">Publicado en {{ first_post.date }}</div>

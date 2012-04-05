@@ -30,6 +30,7 @@ div.cuerpo {
 	background-image: url("../images/logo_p.png");
 	background-repeat: no-repeat;
 	background-color: #D8D1BE;
+	cursor: hand;
 	clear: both;
 	margin:0px auto;
 	padding:2px;
@@ -64,4 +65,14 @@ div.cuerpo {
 #date {
   font-size: 9pt;
 	color: rgb(41, 111, 87);
+}
+#alert {
+  position: absolute;
+  top: 45px;
+  left:345px;
+  width: 220px;
+  height: 64px;
+  font-size: 10pt;
+	color: #F9D929;
+	border: 1px solid #F71B0A;
 }

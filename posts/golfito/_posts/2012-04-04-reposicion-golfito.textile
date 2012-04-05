@@ -1,0 +1,23 @@
+---
+title: Reposición del golfito por un material equivalente
+layout: post
+---
+
+En el presente foro, el tema a tratar es la reposición del golfito por un material equivalente que le permita conservar su función.
+
+Ventajas:
+* Es la alternativa que presenta la menor dificultad de ejecución.
+* No hay contraindicaciones por ingeniería civil.
+* El acabado final es fácil de predecir.
+
+Desventajas:
+* Necesidad de hacer otra reposición en unos años.
+* Se deteriora con rapidez, causando mala presentación como la que ha ocurrido desde hace un tiempo.
+* Costo elevado.
+ 
+Se tienen las siguientes cotizaciones:
+# Sintéticos Medellín por $123'456.789
+# Tapetes Verdes por $234'456.789
+# Golfitos Recreativos por $321'456.789
+
+{% include como-participar.textile %}

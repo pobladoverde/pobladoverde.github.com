@@ -1,0 +1,23 @@
+---
+title: Retiro del golfito para instalar un jardín
+layout: post
+---
+
+En el presente foro, el tema a tratar es el retiro del tapete sintético y la preparación del golfito para poder instalar un jardín usando como base la estructura existente.
+
+Ventajas:
+* El resultado estético es atractivo.
+* Se mantiene agradable por largo tiempo.
+* Se puede lograr un diseño creativo.
+
+Desventajas:
+* Puede causar problemas de humedades en la losa.
+* Mantenimiento elevado.
+* Costo elevado.
+ 
+Se tienen las siguientes cotizaciones:
+# Jardines verdes por $123'456.789
+# Jardines amarillos por $234'456.789
+# Jardines rojos por $321'456.789
+
+{% include como-participar.textile %}

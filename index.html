@@ -4,38 +4,32 @@ title: bienvenidos
 ---
 <div id="hot-topic">
 <h2>Tema prioritario: Problemática del golfito</h2>
-El golfito, tan promocionado durante la etapa de ventas del conjunto residencial, se fue convirtiendo en una carga cada vez mayor debido a su deterioro, al bajo uso y al costo elevado de su reposición.
+<p>El golfito, tan promocionado durante la etapa de ventas del conjunto residencial, se fue convirtiendo en una carga cada vez mayor debido a su deterioro, al bajo uso y al costo elevado de su reposición.</p>
 
-En la pasada asamblea, se solicitó al recién nombrado consejo de administración que liderara un proceso de selección de alternativas para ser sometido a votación en una asamblea extraordinaria. El proceso debía ser democrático, participativo e incluyente.
+<p>En la pasada asamblea, se solicitó al recién nombrado consejo de administración que liderara un proceso de selección de alternativas para ser sometido a votación en una asamblea extraordinaria. El proceso debía ser democrático, participativo e incluyente.</p>
 
-Las alternativas que se han contemplado hasta el momento son:
-
-# "Reposición del tapete sintético por uno equivalente":http://pobladoverde.com/blog/2012/04/04/reposicion-golfito/.
-# "Retiro del tapete sintético y aplicación de pintura epóxica":http://pobladoverde.com/blog/2012/04/04/pintura-golfito/.
-# "Construcción de jardín zen, jardín vegetal o similares":http://pobladoverde.com/blog/2012/04/04/golfito-por-jardin/.
-# "Demolición completa del golfito y cambio por piso duro":http://pobladoverde.com/blog/2012/04/04/retiro-golfito/.
-
-Cada alternativa presenta ventajas y desventajas y por lo tanto cada una tendrá seguidores y detractores.
-
-Además, por razones de costo y de aplicabilidad, algunas tendrán que ser desechadas.
-
-El objetivo de este foro abierto es conocer y publicar las opiniones de los habitantes del conjunto para poder tomar la mejor decisión basados en informaciones concretas, recomendaciones de expertos y cotizaciones concretas.
-
+<p>Las alternativas que se han contemplado hasta el momento son:
 {% for post in site.posts %}
 <li><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;<abbr>{{ post.date | date_to_string }}</abbr></li>
-	{%if post.title='Problemática del golfito' %}
-		<h2>éste es</h2>
+	{%if post.url='http://pobladoverde.com/blog/2012/04/04/golfito-por-jardin' %}
+		<abbr> me gusta</abbr>
 	{% endif %}
 {% endfor %}
+</p>
+<p>Cada alternativa presenta ventajas y desventajas y por lo tanto cada una tendrá seguidores y detractores.</p>
+
+<p>Además, por razones de costo y de aplicabilidad, algunas tendrán que ser desechadas.</p>
+
+<p>El objetivo de este foro abierto es conocer y publicar las opiniones de los habitantes del conjunto para poder tomar la mejor decisión basados en informaciones concretas, recomendaciones de expertos y cotizaciones concretas.</p>
 </div>
-<hr />
+<!-- hr />
 
 <h2>Otros temas</h2>
 <ul id="archive">
 {% for post in site.posts %}
 <li><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;<abbr>{{ post.date | date_to_string }}</abbr></li>
 {% endfor %}
-</ul>
+</ul -->
 <div id="alert">Citación a la Asamblea Extraordinaria
 	<div id="date">Abril 10</div>
 </div>

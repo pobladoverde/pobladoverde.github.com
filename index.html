@@ -6,15 +6,18 @@ title: bienvenidos
 <h2>Tema prioritario: Problemática del golfito</h2>
 <p>El golfito, tan promocionado durante la etapa de ventas del conjunto residencial, se fue convirtiendo en una carga cada vez mayor debido a su deterioro, al bajo uso y al costo elevado de su reposición.</p>
 
-<p>En la pasada asamblea, se solicitó al recién nombrado consejo de administración que liderara un proceso de selección de alternativas para ser sometido a votación en una asamblea extraordinaria. El proceso debía ser democrático, participativo e incluyente.</p>
+<p>En la pasada asamblea, se solicitó al recién nombrado consejo de administración que liderara un proceso de selección de alternativas para ser sometido a votación en una asamblea extraordinaria.</p>
+<p>El mandato de la asamblea obliga a que el proceso sea democrático, participativo e incluyente. Con dichos objetivos en mente, se activó el presente foro de discusión y con el cual se pretende llegar al mayor número de copropietarios posibles y difundir la información con todo el detalle con que se dispone.</p> 
 
 <p>Las alternativas que se han contemplado hasta el momento son:
-{% for post in site.posts %}
-<li><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;<abbr>{{ post.date | date_to_string }}</abbr></li>
-	{%if post.url='http://pobladoverde.com/blog/2012/04/04/golfito-por-jardin' %}
+<ul>
+{% for post in site.categories.golfito %}
+<li><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;<!-- abbr>{{ post.date | date_to_string }}</abbr --></li>
+	{%if post.url=='http://pobladoverde.com/blog/2012/04/04/golfito-por-jardin' %}
 		<abbr> me gusta</abbr>
 	{% endif %}
 {% endfor %}
+</ul>
 </p>
 <p>Cada alternativa presenta ventajas y desventajas y por lo tanto cada una tendrá seguidores y detractores.</p>
 
@@ -30,6 +33,6 @@ title: bienvenidos
 <li><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;<abbr>{{ post.date | date_to_string }}</abbr></li>
 {% endfor %}
 </ul -->
-<div id="alert">Citación a la Asamblea Extraordinaria
+<div id="alert"><a href="http://pobladoverde.com/blog/2012/03/28/asamblea-extraordinaria"></a>Citación a la Asamblea Extraordinaria
 	<div id="date">Abril 10</div>
 </div>

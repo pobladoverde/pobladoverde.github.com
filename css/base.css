@@ -78,3 +78,14 @@ div.cuerpo {
 	background-color: #F9D929;
 	border: 1px solid #F71B0A;
 }
+#alert-shadow {
+  position: absolute;
+  top: 136px;
+  left: 591px;
+  width: 190px;
+  height: 54px;
+	background-color: #483F0F;
+	opacity: 0.5;
+	border: 1px solid #322C0D;
+	z-index: 999;
+}

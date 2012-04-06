@@ -51,6 +51,11 @@ div.cuerpo {
   font-size: 8pt;
   margin-left: 588px;
 }
+#social-networks {
+	width: 100%;
+  text-align: right;
+  font-size: 8pt;
+}
 #footer {
 	width: 100%;
   text-align: center;

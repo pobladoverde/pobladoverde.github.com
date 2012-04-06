@@ -1,0 +1,18 @@
+---
+title: Problemática terrazas - comportamiento ético
+layout: post
+---
+
+En la pasada Asamblea General de Copropietarios, varias personas se lamentaron del problema recurrente de la cantidad de basura que reciben a diario en sus terrazas. En ocasiones, con riesgo incluso a sus vidas y a las vidas de sus seres queridos.
+
+Aquí vale aplicar la máxima de la ética, recogida en una u otra forma por las diferentes religiones y que podría sintetizarse como: "No hagas a los demás lo que no quieres que te hagan a tí".
+
+Las campañas de sensibilización se han hecho. Las normas de comportamiento existen, las leyes están escritas y se pueden aplicar. Pero, ¿si tiene sentido tener que llegar a estos extremos? ¿llenarnos de vigilantes y de cámaras para subsanar un problema de convivencia, de respeto por el otro?
+
+Acaso no tenemos el nivel de educación suficiente para conocer las consecuencias de nuestros actos. O para tomar las medidas necesarias para evitar que las personas que dependen de nosotros afecten a nuestros vecinos, en el caso de niños muy pequeños o personas con problemas mentales tales que no gobiernen sus acciones o reconozcan las consecuencias de sus actos. 
+
+Porque salvo en estos últimos casos, se puede disculpar una actitud desconsiderada, antisocial e irresponsable como la que sufren a diario los propietarios de terrazas de los pisos inferiores.
+
+¿Qué más podemos hacer para lograr una armoniosa convivencia?
+
+{% include como-participar.textile %}
